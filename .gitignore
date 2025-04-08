@@ -1,0 +1,8 @@
+.vs/
+*.log
+*.user
+bin/
+obj/
+*.suo
+*.userosscache
+*.sln.docstates

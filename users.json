@@ -1,0 +1,19 @@
+[
+  {
+    "TGFile": null,
+    "FileName": null,
+    "FullName": "Ali Abood",
+    "Username": "A2_Ab",
+    "ChatID": 732356803,
+    "Id": 732356803,
+    "LastActivity": "2025-04-06T16:44:04.7490026Z",
+    "State": 0,
+    "Language": 0,
+    "ResetToken": null,
+    "Pdf": null,
+    "Prompt": "",
+    "MaxTokens": 800,
+    "Temperature": 1,
+    "IsAiEnabled": false
+  }
+]

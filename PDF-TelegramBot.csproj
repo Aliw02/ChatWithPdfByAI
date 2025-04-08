@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace>PDF_TelegramBot</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="dotenv.net" Version="3.2.1" />
+    <PackageReference Include="IronPdf" Version="2025.3.6" />
+    <PackageReference Include="IronXL.Excel" Version="2025.3.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+	<PackageReference Include="PdfSharp" Version="6.1.1" />
+	<PackageReference Include="Questpdf" Version="2025.4.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.7" />
+    <PackageReference Include="Spire" Version="0.14.1" />
+    <PackageReference Include="Spire.doc" Version="13.3.7" />
+    <PackageReference Include="Spire.PDF" Version="11.3.0" />
+	<PackageReference Include="System.Drawing.Common" Version="9.0.3" />
+    <PackageReference Include="Telegram.Bot" Version="22.4.4" />
+    <PackageReference Include="Xceed.Words.NET" Version="4.0.25103.5784" />
+	  
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update=".env">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
