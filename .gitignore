@@ -6,4 +6,4 @@ obj/
 *.suo
 *.userosscache
 *.sln.docstates
-.env
+*.env
