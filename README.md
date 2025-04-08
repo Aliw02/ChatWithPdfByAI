@@ -27,7 +27,6 @@ PDF-TelegramBot is a .NET 9 application that allows users to interact with a Tel
    - `/merge` - Merge multiple PDF files.
    - `/split` - Split a PDF file.
    - `/convert` - Convert images to PDF.
-   - `/extract` - Extract text from a PDF file.
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
@@ -43,18 +42,22 @@ PDF-TelegramBot is a .NET 9 application that allows users to interact with a Tel
 - **Merge PDFs**: Combine multiple PDF files into a single document.
 - **Split PDFs**: Divide a PDF file into multiple smaller files.
 - **Convert Images to PDF**: Transform image files into PDF format.
-- **Extract Text from PDFs**: Retrieve text content from PDF files.
 
 ## Prerequisites
 - .NET 9 SDK
 - Telegram Bot API token
+- Gemini API key for chat with pdf documents
+- IronPdf license key for pdf manipulation
 
 ## Getting Started
 
 ### Clone the Repository
 ### Configure the Bot
 1. Create a new bot on Telegram and obtain the API token.
-2. Set the API token in the `appsettings.json` file:
+2. Set the API token in the `.env` file:
+3. ```bash 
+   APISETTINGS__APITOKEN=your_bot_token_here
+   ```
 
 ### Build and Run
 1. Build the project:
@@ -65,10 +68,6 @@ PDF-TelegramBot is a .NET 9 application that allows users to interact with a Tel
 - **Merge PDFs**: Combine multiple PDF files into a single document.
 - **Split PDFs**: Divide a PDF file into multiple smaller files.
 - **Convert Images to PDF**: Transform image files into PDF format.
-- **Extract Text from PDFs**: Retrieve text content from PDF files.
-- **Compress PDFs**: Reduce the file size of PDF documents.
-- **Rotate Pages**: Rotate specific pages within a PDF.
-- **Add Watermarks**: Add text or image watermarks to PDF files.
 - **Encrypt/Decrypt PDFs**: Secure PDF files with passwords or remove existing passwords.
 
 ## Usage
@@ -78,9 +77,6 @@ PDF-TelegramBot is a .NET 9 application that allows users to interact with a Tel
      - `/merge` - Merge multiple PDF files.
      - `/split` - Split a PDF file.
      - `/convert` - Convert to PDF Or From PDF.
-     - `/extract` - Extract text from a PDF file.
-     - `/compress` - Compress a PDF file.
-     - `/rotate` - Rotate pages in a PDF file.
      - `/encrypt` - Encrypt a PDF file.
      - `/decrypt` - Decrypt a PDF file.
    - **Buttons**:
